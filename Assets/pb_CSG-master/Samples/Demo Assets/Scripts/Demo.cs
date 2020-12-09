@@ -58,9 +58,7 @@ namespace Parabox.CSG.Demo
 
 		public void ResetForTecanAddon()
 		{ 
-
 			 
-
 			GenerateBarycentric(left);
 			GenerateBarycentric(right);
 		}
@@ -89,7 +87,7 @@ namespace Parabox.CSG.Demo
 		}
 		public void SubtractionRLWithoutReset()
 		{
-		 
+			ResetForTecanAddon();
 			DoBooleanOperation(BoolOp.SubtractRL);
 		}
 
@@ -128,6 +126,7 @@ namespace Parabox.CSG.Demo
 			}
 
 			composite = new GameObject();
+			composite.name = "Result";
 			composite.AddComponent<MeshFilter>().sharedMesh = result.mesh;
 			composite.AddComponent<MeshRenderer>().sharedMaterials = result.materials.ToArray();
 

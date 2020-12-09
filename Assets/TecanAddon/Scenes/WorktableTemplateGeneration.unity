@@ -564,6 +564,8 @@ MonoBehaviour:
     type: 3}
   listOfCylinders: []
   baseCube: {fileID: 0}
+  baseCube2: {fileID: 3002257608434510051, guid: 65498c6ed308e20479c39b4e2518b13a,
+    type: 3}
   a: {fileID: 2105846513}
   b: {fileID: 10803813}
 --- !u!4 &655790589
@@ -723,7 +725,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 655790590}
-        m_MethodName: MakeUnitonCylinderOperation
+        m_MethodName: MakeSubCylinderOperation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -880,13 +882,13 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.35
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -936,13 +938,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548320027}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.42488378, y: -0.20282649, z: 0.17567956, w: 0.8645646}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 53.702003, y: -19.892, z: 12.826}
 --- !u!1 &1730850098
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class LabwareGenerator : MonoBehaviour
     [SerializeField] GameObject cylinderTemplate;
     [SerializeField] List<GameObject> listOfCylinders;
     [SerializeField] GameObject baseCube;
+    [SerializeField] GameObject baseCube2;
     [SerializeField] InputField a, b; 
     private void Start()
     {
@@ -49,7 +50,7 @@ public class LabwareGenerator : MonoBehaviour
 
     public void GenerateBaseCube()
     {
-        baseCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        baseCube = Instantiate(baseCube2);
         float avgX, avgZ, avgY;
 
         avgX = listOfCylinders.Average(cylinder => cylinder.transform.position.x);
